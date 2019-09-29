@@ -1,0 +1,138 @@
+body {
+    font-family: Arial;
+}
+
+#gridview {
+    text-align: center;
+}
+
+div.image {
+    margin: 10px;
+    display: inline-block;
+    position: relative;
+}
+
+div.image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+div.preview-image {
+    float: left;
+    padding: 0px 0px 20px 20px;
+}
+
+div.preview-image img {
+    width: 100%;
+    max-width: 450px;
+    height: auto;
+    border: 1px solid #ccc;
+}
+
+div.image img:hover {
+    box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.32), 0 0 0 0px
+        rgba(0, 0, 0, 0.16);
+        
+}
+
+.heading {
+    padding: 10px 10px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+#grid {
+    margin-bottom: 30px;
+}
+
+.quick_look {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    margin-left: -51px;
+    background: transparent;
+    border: #FFF 2px solid;
+    padding: 8px 25px;
+    color: #FFF;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.quick_look:hover {
+    background: #FFF;
+    color: #333;
+}
+
+.product-info {
+    float: left;
+    margin-left: 20px;
+}
+
+div.product-info ul {
+    margin: 10px 0px;
+    padding: 0;
+}
+
+div.product-info li {
+    cursor: pointer;
+    list-style-type: none;
+    display: inline-block;
+    color: #F0F0F0;
+    text-shadow: 0 0 1px #666666;
+    font-size: 14px;
+}
+
+div.product-info .selected {
+    color: #e4a400;
+    text-shadow: 0 0 5px #ffb900;
+}
+
+.product-title {
+    font-size: 1.5em;
+}
+
+.product-category {
+    margin: 20px 0px;
+    font-size: 0.9em;
+    color: #c4c4c5;
+    text-transform: uppercase;
+    border-left: #c4c4c5 3px solid;
+    padding: 0px 5px 0px 5px;
+    text-transform: uppercase;
+}
+
+button.btn-info {
+    padding: 10px;
+    margin: 20px 20px 0px 0px;
+    padding: 10px 20px;
+    background: #67bdf7;
+    border: #60b2e8 1px solid;
+    border-radius: 3px;
+    color: #FFF;
+}
+
+.ui-widget-header {
+    border: none !important;
+    background: none !important;
+}
+/* Responsive Styles */
+@media screen and (min-width: 1224px) {
+    div.image {
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 1044px) and (max-width: 1224px) {
+    div.image {
+        width: 250px;
+    }
+}
+
+@media screen and (min-width: 845px) and (max-width: 1044px) {
+    div.image {
+        width: 200px;
+    }
+}
